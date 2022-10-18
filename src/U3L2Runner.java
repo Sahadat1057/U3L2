@@ -2,36 +2,33 @@ import java.util.Scanner;
 public class U3L2Runner {
     public static void main(String[] args) {
 
-                // Tell the user to enter a question
-                Scanner scan = new Scanner(System.in);
-                System.out.println("Welcome to the Magic 8 Ball!");
-                System.out.print("Enter your yes-no question and I will answer it: ");
-                String question = scan.nextLine();
-                int x = (int) (Math.random() * 7);
-                if (x==1) {
-                    System.out.println("yes");
+        int score = 83;
+        String grade = "";
+
+        if (score >= 90)
+        {
+            grade = "A";
         }
-                else if (x==2) {
-                    System.out.println("obviously");
-                }
-                else if (x==3) {
-                    System.out.println("of course");
-                }
-                else if (x==4) {
-                    System.out.println("No");
-                }
-                else if (x==5) {
-                    System.out.println("Hell no");
-                }
-                else  {
-                    System.out.println("Nah, rethink your life choices");
-                }
-                // Get a random number from 1 to 6
+        if (score >= 80)
+        {
+            grade = "B";
+        }
+        if (score >= 70)
+        {
+            grade = "C";
+        }
+        if (score >= 60)
+        {
+            grade = "D";
+        }
+        if (score < 60)
+        {
+            grade = "F";
+        }
+        System.out.println("Your grade is: " + grade);
 
-                // Use selection statements (if, if-else, else-if)
-                // to choose from 1 of 6 responses to yes-no questions, then print it out!
 
-            }
+    }
 
     }
 
